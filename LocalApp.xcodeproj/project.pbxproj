@@ -1,0 +1,667 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A903BEFC03D12D0B04A2646A /* libPods-LocalApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9E3129E47569D0B4A256827 /* libPods-LocalApp.a */; };
+		E11A251B1BD0D99800B39BCB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E11A251D1BD0D99800B39BCB /* Localizable.strings */; };
+		E16B005B1BD26A8400EC38B5 /* Conversation.m in Sources */ = {isa = PBXBuildFile; fileRef = E16B003D1BD26A8400EC38B5 /* Conversation.m */; };
+		E16B005C1BD26A8400EC38B5 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = E16B00401BD26A8400EC38B5 /* Message.m */; };
+		E16B005D1BD26A8400EC38B5 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = E16B00431BD26A8400EC38B5 /* User.m */; };
+		E16B005E1BD26A8400EC38B5 /* ChatManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E16B00471BD26A8400EC38B5 /* ChatManager.m */; };
+		E16B005F1BD26A8400EC38B5 /* ChatManagerI.m in Sources */ = {isa = PBXBuildFile; fileRef = E16B00491BD26A8400EC38B5 /* ChatManagerI.m */; };
+		E16B00601BD26A8400EC38B5 /* CustomDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = E16B004B1BD26A8400EC38B5 /* CustomDictionary.m */; };
+		E16B00611BD26A8400EC38B5 /* ContactManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E16B004E1BD26A8400EC38B5 /* ContactManager.m */; };
+		E16B00621BD26A8400EC38B5 /* LoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E16B00511BD26A8400EC38B5 /* LoginManager.m */; };
+		E16B00631BD26A8400EC38B5 /* ModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E16B00541BD26A8400EC38B5 /* ModelManager.m */; };
+		E16B00641BD26A8400EC38B5 /* ProfileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E16B00571BD26A8400EC38B5 /* ProfileManager.m */; };
+		E16B00651BD26A8400EC38B5 /* SettingsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E16B005A1BD26A8400EC38B5 /* SettingsManager.m */; };
+		E16B006A1BD28FA700EC38B5 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = E16B00691BD28FA700EC38B5 /* Location.m */; };
+		E16B00701BD290FF00EC38B5 /* RequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E16B006F1BD290FF00EC38B5 /* RequestManager.m */; };
+		E18C31A01BE614A800AB8269 /* WelcomeScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E18C319F1BE614A800AB8269 /* WelcomeScreenViewController.m */; };
+		E1DBBDEE1BCA766600A76AC8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DBBDED1BCA766600A76AC8 /* main.m */; };
+		E1DBBDF11BCA766600A76AC8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DBBDF01BCA766600A76AC8 /* AppDelegate.m */; };
+		E1DBBDF41BCA766600A76AC8 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DBBDF31BCA766600A76AC8 /* RootViewController.m */; };
+		E1DBBDF71BCA766600A76AC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1DBBDF51BCA766600A76AC8 /* Main.storyboard */; };
+		E1DBBDFA1BCA766600A76AC8 /* LocalApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E1DBBDF81BCA766600A76AC8 /* LocalApp.xcdatamodeld */; };
+		E1DBBDFC1BCA766600A76AC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1DBBDFB1BCA766600A76AC8 /* Assets.xcassets */; };
+		E1DBBDFF1BCA766600A76AC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1DBBDFD1BCA766600A76AC8 /* LaunchScreen.storyboard */; };
+		E1F07CDA1BD553CE00E3DF0B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1F07CD91BD553CE00E3DF0B /* CoreLocation.framework */; };
+		E1F07CDC1BD553D300E3DF0B /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1F07CDB1BD553D300E3DF0B /* MessageUI.framework */; };
+		E1F07CDE1BD553DA00E3DF0B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1F07CDD1BD553D900E3DF0B /* QuartzCore.framework */; };
+		E1F07CE21BD553ED00E3DF0B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1F07CE11BD553ED00E3DF0B /* CFNetwork.framework */; };
+		E1F07CE41BD553F300E3DF0B /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1F07CE31BD553F300E3DF0B /* CoreFoundation.framework */; };
+		E1F07CE61BD5542200E3DF0B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1F07CE51BD5542200E3DF0B /* UIKit.framework */; };
+		E1F07CF11BD5EC6600E3DF0B /* ChatVendorI.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F07CF01BD5EC6600E3DF0B /* ChatVendorI.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		37C006A27DA9AC7C0498A723 /* Pods-LocalApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LocalApp/Pods-LocalApp.debug.xcconfig"; sourceTree = "<group>"; };
+		46321BC5977C8F6FB8504428 /* Pods-LocalApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-LocalApp/Pods-LocalApp.release.xcconfig"; sourceTree = "<group>"; };
+		D9E3129E47569D0B4A256827 /* libPods-LocalApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LocalApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E11A251C1BD0D99800B39BCB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E16B00301BD2316200EC38B5 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		E16B00321BD231FE00EC38B5 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		E16B003C1BD26A8400EC38B5 /* Conversation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Conversation.h; sourceTree = "<group>"; };
+		E16B003D1BD26A8400EC38B5 /* Conversation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Conversation.m; sourceTree = "<group>"; };
+		E16B003F1BD26A8400EC38B5 /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		E16B00401BD26A8400EC38B5 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
+		E16B00421BD26A8400EC38B5 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		E16B00431BD26A8400EC38B5 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		E16B00461BD26A8400EC38B5 /* ChatManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatManager.h; sourceTree = "<group>"; };
+		E16B00471BD26A8400EC38B5 /* ChatManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatManager.m; sourceTree = "<group>"; };
+		E16B00481BD26A8400EC38B5 /* ChatManagerI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatManagerI.h; sourceTree = "<group>"; };
+		E16B00491BD26A8400EC38B5 /* ChatManagerI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatManagerI.m; sourceTree = "<group>"; };
+		E16B004A1BD26A8400EC38B5 /* CustomDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomDictionary.h; sourceTree = "<group>"; };
+		E16B004B1BD26A8400EC38B5 /* CustomDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomDictionary.m; sourceTree = "<group>"; };
+		E16B004D1BD26A8400EC38B5 /* ContactManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactManager.h; sourceTree = "<group>"; };
+		E16B004E1BD26A8400EC38B5 /* ContactManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactManager.m; sourceTree = "<group>"; };
+		E16B00501BD26A8400EC38B5 /* LoginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginManager.h; sourceTree = "<group>"; };
+		E16B00511BD26A8400EC38B5 /* LoginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginManager.m; sourceTree = "<group>"; };
+		E16B00531BD26A8400EC38B5 /* ModelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelManager.h; sourceTree = "<group>"; };
+		E16B00541BD26A8400EC38B5 /* ModelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelManager.m; sourceTree = "<group>"; };
+		E16B00561BD26A8400EC38B5 /* ProfileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileManager.h; sourceTree = "<group>"; };
+		E16B00571BD26A8400EC38B5 /* ProfileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileManager.m; sourceTree = "<group>"; };
+		E16B00591BD26A8400EC38B5 /* SettingsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsManager.h; sourceTree = "<group>"; };
+		E16B005A1BD26A8400EC38B5 /* SettingsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsManager.m; sourceTree = "<group>"; };
+		E16B00681BD28FA700EC38B5 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		E16B00691BD28FA700EC38B5 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		E16B006E1BD290FF00EC38B5 /* RequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestManager.h; sourceTree = "<group>"; };
+		E16B006F1BD290FF00EC38B5 /* RequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestManager.m; sourceTree = "<group>"; };
+		E18C319E1BE614A800AB8269 /* WelcomeScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeScreenViewController.h; sourceTree = "<group>"; };
+		E18C319F1BE614A800AB8269 /* WelcomeScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeScreenViewController.m; sourceTree = "<group>"; };
+		E1DBBDE91BCA766600A76AC8 /* LocalApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1DBBDED1BCA766600A76AC8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E1DBBDEF1BCA766600A76AC8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E1DBBDF01BCA766600A76AC8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E1DBBDF21BCA766600A76AC8 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		E1DBBDF31BCA766600A76AC8 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		E1DBBDF61BCA766600A76AC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E1DBBDF91BCA766600A76AC8 /* LocalApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LocalApp.xcdatamodel; sourceTree = "<group>"; };
+		E1DBBDFB1BCA766600A76AC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E1DBBDFE1BCA766600A76AC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E1DBBE001BCA766600A76AC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1F07CD91BD553CE00E3DF0B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		E1F07CDB1BD553D300E3DF0B /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		E1F07CDD1BD553D900E3DF0B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E1F07CDF1BD553E500E3DF0B /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		E1F07CE11BD553ED00E3DF0B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		E1F07CE31BD553F300E3DF0B /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		E1F07CE51BD5542200E3DF0B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E1F07CEF1BD5EC6600E3DF0B /* ChatVendorI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatVendorI.h; sourceTree = "<group>"; };
+		E1F07CF01BD5EC6600E3DF0B /* ChatVendorI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatVendorI.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E1DBBDE61BCA766600A76AC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1F07CE61BD5542200E3DF0B /* UIKit.framework in Frameworks */,
+				E1F07CE41BD553F300E3DF0B /* CoreFoundation.framework in Frameworks */,
+				E1F07CE21BD553ED00E3DF0B /* CFNetwork.framework in Frameworks */,
+				E1F07CDE1BD553DA00E3DF0B /* QuartzCore.framework in Frameworks */,
+				E1F07CDC1BD553D300E3DF0B /* MessageUI.framework in Frameworks */,
+				E1F07CDA1BD553CE00E3DF0B /* CoreLocation.framework in Frameworks */,
+				A903BEFC03D12D0B04A2646A /* libPods-LocalApp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09FEE112F21236B994E3249B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37C006A27DA9AC7C0498A723 /* Pods-LocalApp.debug.xcconfig */,
+				46321BC5977C8F6FB8504428 /* Pods-LocalApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E16B00391BD26A8400EC38B5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E16B003A1BD26A8400EC38B5 /* Interfaces */,
+				E16B00441BD26A8400EC38B5 /* Managers */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E16B003A1BD26A8400EC38B5 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				E16B00671BD28FA700EC38B5 /* Location */,
+				E16B003B1BD26A8400EC38B5 /* Conversation */,
+				E16B003E1BD26A8400EC38B5 /* Message */,
+				E16B00411BD26A8400EC38B5 /* User */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		E16B003B1BD26A8400EC38B5 /* Conversation */ = {
+			isa = PBXGroup;
+			children = (
+				E16B003C1BD26A8400EC38B5 /* Conversation.h */,
+				E16B003D1BD26A8400EC38B5 /* Conversation.m */,
+			);
+			path = Conversation;
+			sourceTree = "<group>";
+		};
+		E16B003E1BD26A8400EC38B5 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				E16B003F1BD26A8400EC38B5 /* Message.h */,
+				E16B00401BD26A8400EC38B5 /* Message.m */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		E16B00411BD26A8400EC38B5 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				E16B00421BD26A8400EC38B5 /* User.h */,
+				E16B00431BD26A8400EC38B5 /* User.m */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		E16B00441BD26A8400EC38B5 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				E16B00521BD26A8400EC38B5 /* ModelManager */,
+				E16B004F1BD26A8400EC38B5 /* LoginManager */,
+				E16B00551BD26A8400EC38B5 /* Profile Manager */,
+				E16B004C1BD26A8400EC38B5 /* ContactManager */,
+				E16B00581BD26A8400EC38B5 /* SettingsManager */,
+				E1F07CE71BD5D55E00E3DF0B /* ChatVendor */,
+				E16B00451BD26A8400EC38B5 /* ChatManager */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		E16B00451BD26A8400EC38B5 /* ChatManager */ = {
+			isa = PBXGroup;
+			children = (
+				E16B00461BD26A8400EC38B5 /* ChatManager.h */,
+				E16B00471BD26A8400EC38B5 /* ChatManager.m */,
+				E16B00481BD26A8400EC38B5 /* ChatManagerI.h */,
+				E16B00491BD26A8400EC38B5 /* ChatManagerI.m */,
+				E16B004A1BD26A8400EC38B5 /* CustomDictionary.h */,
+				E16B004B1BD26A8400EC38B5 /* CustomDictionary.m */,
+			);
+			path = ChatManager;
+			sourceTree = "<group>";
+		};
+		E16B004C1BD26A8400EC38B5 /* ContactManager */ = {
+			isa = PBXGroup;
+			children = (
+				E16B004D1BD26A8400EC38B5 /* ContactManager.h */,
+				E16B004E1BD26A8400EC38B5 /* ContactManager.m */,
+			);
+			path = ContactManager;
+			sourceTree = "<group>";
+		};
+		E16B004F1BD26A8400EC38B5 /* LoginManager */ = {
+			isa = PBXGroup;
+			children = (
+				E16B00501BD26A8400EC38B5 /* LoginManager.h */,
+				E16B00511BD26A8400EC38B5 /* LoginManager.m */,
+			);
+			path = LoginManager;
+			sourceTree = "<group>";
+		};
+		E16B00521BD26A8400EC38B5 /* ModelManager */ = {
+			isa = PBXGroup;
+			children = (
+				E16B00531BD26A8400EC38B5 /* ModelManager.h */,
+				E16B00541BD26A8400EC38B5 /* ModelManager.m */,
+			);
+			path = ModelManager;
+			sourceTree = "<group>";
+		};
+		E16B00551BD26A8400EC38B5 /* Profile Manager */ = {
+			isa = PBXGroup;
+			children = (
+				E16B00561BD26A8400EC38B5 /* ProfileManager.h */,
+				E16B00571BD26A8400EC38B5 /* ProfileManager.m */,
+			);
+			path = "Profile Manager";
+			sourceTree = "<group>";
+		};
+		E16B00581BD26A8400EC38B5 /* SettingsManager */ = {
+			isa = PBXGroup;
+			children = (
+				E16B00591BD26A8400EC38B5 /* SettingsManager.h */,
+				E16B005A1BD26A8400EC38B5 /* SettingsManager.m */,
+			);
+			path = SettingsManager;
+			sourceTree = "<group>";
+		};
+		E16B00661BD26ABC00EC38B5 /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				E16B006E1BD290FF00EC38B5 /* RequestManager.h */,
+				E16B006F1BD290FF00EC38B5 /* RequestManager.m */,
+			);
+			path = APIManager;
+			sourceTree = "<group>";
+		};
+		E16B00671BD28FA700EC38B5 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				E16B00681BD28FA700EC38B5 /* Location.h */,
+				E16B00691BD28FA700EC38B5 /* Location.m */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		E18C319D1BE609FB00AB8269 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E18C319E1BE614A800AB8269 /* WelcomeScreenViewController.h */,
+				E18C319F1BE614A800AB8269 /* WelcomeScreenViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E1DBBDE01BCA766600A76AC8 = {
+			isa = PBXGroup;
+			children = (
+				E1DBBDEB1BCA766600A76AC8 /* LocalApp */,
+				E1DBBDEA1BCA766600A76AC8 /* Products */,
+				09FEE112F21236B994E3249B /* Pods */,
+				FA15CF7C8FBADF5D15469052 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E1DBBDEA1BCA766600A76AC8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1DBBDE91BCA766600A76AC8 /* LocalApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1DBBDEB1BCA766600A76AC8 /* LocalApp */ = {
+			isa = PBXGroup;
+			children = (
+				E1DBBDEF1BCA766600A76AC8 /* AppDelegate.h */,
+				E1DBBDF01BCA766600A76AC8 /* AppDelegate.m */,
+				E1DBBDF21BCA766600A76AC8 /* RootViewController.h */,
+				E1DBBDF31BCA766600A76AC8 /* RootViewController.m */,
+				E18C319D1BE609FB00AB8269 /* Controllers */,
+				E16B00391BD26A8400EC38B5 /* Model */,
+				E16B00661BD26ABC00EC38B5 /* APIManager */,
+				E1DBBDF51BCA766600A76AC8 /* Main.storyboard */,
+				E1DBBDFB1BCA766600A76AC8 /* Assets.xcassets */,
+				E1DBBDFD1BCA766600A76AC8 /* LaunchScreen.storyboard */,
+				E1DBBE001BCA766600A76AC8 /* Info.plist */,
+				E11A251D1BD0D99800B39BCB /* Localizable.strings */,
+				E1DBBDF81BCA766600A76AC8 /* LocalApp.xcdatamodeld */,
+				E16B00301BD2316200EC38B5 /* Constants.h */,
+				E16B00321BD231FE00EC38B5 /* PrefixHeader.pch */,
+				E1DBBDEC1BCA766600A76AC8 /* Supporting Files */,
+			);
+			path = LocalApp;
+			sourceTree = "<group>";
+		};
+		E1DBBDEC1BCA766600A76AC8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E1DBBDED1BCA766600A76AC8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E1F07CE71BD5D55E00E3DF0B /* ChatVendor */ = {
+			isa = PBXGroup;
+			children = (
+				E1F07CEF1BD5EC6600E3DF0B /* ChatVendorI.h */,
+				E1F07CF01BD5EC6600E3DF0B /* ChatVendorI.m */,
+			);
+			path = ChatVendor;
+			sourceTree = "<group>";
+		};
+		FA15CF7C8FBADF5D15469052 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1F07CE51BD5542200E3DF0B /* UIKit.framework */,
+				E1F07CE31BD553F300E3DF0B /* CoreFoundation.framework */,
+				E1F07CE11BD553ED00E3DF0B /* CFNetwork.framework */,
+				E1F07CDF1BD553E500E3DF0B /* AdSupport.framework */,
+				E1F07CDD1BD553D900E3DF0B /* QuartzCore.framework */,
+				E1F07CDB1BD553D300E3DF0B /* MessageUI.framework */,
+				E1F07CD91BD553CE00E3DF0B /* CoreLocation.framework */,
+				D9E3129E47569D0B4A256827 /* libPods-LocalApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E1DBBDE81BCA766600A76AC8 /* LocalApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1DBBE031BCA766600A76AC8 /* Build configuration list for PBXNativeTarget "LocalApp" */;
+			buildPhases = (
+				5E8474A3FD4AF769AA979E78 /* Check Pods Manifest.lock */,
+				E1DBBDE51BCA766600A76AC8 /* Sources */,
+				E1DBBDE61BCA766600A76AC8 /* Frameworks */,
+				E1DBBDE71BCA766600A76AC8 /* Resources */,
+				C281F28279643A9237033E1F /* Copy Pods Resources */,
+				514DA7187A32801869A5EF83 /* Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LocalApp;
+			productName = LocalApp;
+			productReference = E1DBBDE91BCA766600A76AC8 /* LocalApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E1DBBDE11BCA766600A76AC8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = LocalApp;
+				TargetAttributes = {
+					E1DBBDE81BCA766600A76AC8 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = E1DBBDE41BCA766600A76AC8 /* Build configuration list for PBXProject "LocalApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E1DBBDE01BCA766600A76AC8;
+			productRefGroup = E1DBBDEA1BCA766600A76AC8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E1DBBDE81BCA766600A76AC8 /* LocalApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E1DBBDE71BCA766600A76AC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1DBBDFF1BCA766600A76AC8 /* LaunchScreen.storyboard in Resources */,
+				E11A251B1BD0D99800B39BCB /* Localizable.strings in Resources */,
+				E1DBBDFC1BCA766600A76AC8 /* Assets.xcassets in Resources */,
+				E1DBBDF71BCA766600A76AC8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		514DA7187A32801869A5EF83 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LocalApp/Pods-LocalApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E8474A3FD4AF769AA979E78 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C281F28279643A9237033E1F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LocalApp/Pods-LocalApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E1DBBDE51BCA766600A76AC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E16B005B1BD26A8400EC38B5 /* Conversation.m in Sources */,
+				E16B00611BD26A8400EC38B5 /* ContactManager.m in Sources */,
+				E16B005F1BD26A8400EC38B5 /* ChatManagerI.m in Sources */,
+				E16B00641BD26A8400EC38B5 /* ProfileManager.m in Sources */,
+				E16B00601BD26A8400EC38B5 /* CustomDictionary.m in Sources */,
+				E1F07CF11BD5EC6600E3DF0B /* ChatVendorI.m in Sources */,
+				E16B005D1BD26A8400EC38B5 /* User.m in Sources */,
+				E16B005C1BD26A8400EC38B5 /* Message.m in Sources */,
+				E16B00651BD26A8400EC38B5 /* SettingsManager.m in Sources */,
+				E16B005E1BD26A8400EC38B5 /* ChatManager.m in Sources */,
+				E1DBBDF41BCA766600A76AC8 /* RootViewController.m in Sources */,
+				E16B00631BD26A8400EC38B5 /* ModelManager.m in Sources */,
+				E1DBBDFA1BCA766600A76AC8 /* LocalApp.xcdatamodeld in Sources */,
+				E16B00621BD26A8400EC38B5 /* LoginManager.m in Sources */,
+				E18C31A01BE614A800AB8269 /* WelcomeScreenViewController.m in Sources */,
+				E16B00701BD290FF00EC38B5 /* RequestManager.m in Sources */,
+				E1DBBDF11BCA766600A76AC8 /* AppDelegate.m in Sources */,
+				E16B006A1BD28FA700EC38B5 /* Location.m in Sources */,
+				E1DBBDEE1BCA766600A76AC8 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E11A251D1BD0D99800B39BCB /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E11A251C1BD0D99800B39BCB /* en */,
+			);
+			name = Localizable.strings;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		E1DBBDF51BCA766600A76AC8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1DBBDF61BCA766600A76AC8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E1DBBDFD1BCA766600A76AC8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1DBBDFE1BCA766600A76AC8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E1DBBE011BCA766600A76AC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E1DBBE021BCA766600A76AC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E1DBBE041BCA766600A76AC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37C006A27DA9AC7C0498A723 /* Pods-LocalApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LocalApp/PrefixHeader.pch";
+				INFOPLIST_FILE = LocalApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.localApp.LocalApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E1DBBE051BCA766600A76AC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46321BC5977C8F6FB8504428 /* Pods-LocalApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LocalApp/PrefixHeader.pch";
+				INFOPLIST_FILE = LocalApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.localApp.LocalApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E1DBBDE41BCA766600A76AC8 /* Build configuration list for PBXProject "LocalApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1DBBE011BCA766600A76AC8 /* Debug */,
+				E1DBBE021BCA766600A76AC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1DBBE031BCA766600A76AC8 /* Build configuration list for PBXNativeTarget "LocalApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1DBBE041BCA766600A76AC8 /* Debug */,
+				E1DBBE051BCA766600A76AC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E1DBBDF81BCA766600A76AC8 /* LocalApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E1DBBDF91BCA766600A76AC8 /* LocalApp.xcdatamodel */,
+			);
+			currentVersion = E1DBBDF91BCA766600A76AC8 /* LocalApp.xcdatamodel */;
+			path = LocalApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E1DBBDE11BCA766600A76AC8 /* Project object */;
+}
